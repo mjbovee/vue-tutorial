@@ -1,6 +1,25 @@
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="script.js" defer></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    
+    <body>
+        <div id="app">
+            <p>{{ message }}</p>
+        </div>
+        
+        <div id="app2">
+            <span v-bind:title="message">
+                Here's a message from a mouse hover!
+            </span>
+        </div>
 
-<div id="app">
-    <p>{{ message }}</p>
-</div>
+        <div id="app3">
+            <span v-if="seen">Now you see me</span>
+        </div>
+    </body>
+</html>
+
+
